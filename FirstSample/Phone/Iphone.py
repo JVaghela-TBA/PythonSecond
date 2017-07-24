@@ -3,8 +3,8 @@ class IPhone:
         self.model=model;
         self.price=price;
     def print(self): 
-        print("Model : "+self.model);
-        print("Price : "+str(self.price));
+        print("\tModel : "+self.model);
+        print("\tPrice : "+str(self.price));
 
 
         

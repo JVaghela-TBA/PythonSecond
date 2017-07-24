@@ -3,5 +3,5 @@ class Samsung:
             self.model=model;
             self.price=price;
         def print(self):
-            print("Model : "+str(self.model));
-            print("Price : "+str(self.price));
+            print("\tModel : "+str(self.model));
+            print("\tPrice : "+str(self.price));
