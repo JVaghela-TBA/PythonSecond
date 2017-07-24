@@ -1,10 +1,10 @@
 import sys;
 import Phone;
 
-try:
-    Phone.iphone();
-    Phone.samsung();
-except:
-    print("Exception Found");
-else:
-    print("Finally Block Execute");
+phone=Phone.IPhone("IPhone 5S",21000)
+phone.print();
+
+samsung=Phone.Samsung("Galaxy 5s",47000);
+samsung.print();
+
+
