@@ -1,5 +1,10 @@
 import sys;
+import logging;
 import Phone;
+
+#logging message in python
+logger=logging.getLogger("Logger");
+logger.setLevel(logging.DEBUG);
 
 try:
     print("IPhone");
@@ -13,6 +18,7 @@ try:
     samsung=Phone.Samsung("Galaxy S",47000);
     samsung.print();
 
+    no=10/0
     #Print Class Variables
     #print("Samsung.__doc__ :"+str(Phone.Samsung.__doc__));
     #print("Samsung.__name__ :"+str(Phone.Samsung.__name__));
@@ -29,6 +35,8 @@ try:
 
     print("-------------------------");
 except Exception as e:
+    #implement logger
+    logger.error("Exception Found "+str(e));
     print("Exception Found"+str(e));
 finally:
     
