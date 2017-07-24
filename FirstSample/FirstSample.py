@@ -18,7 +18,20 @@ try:
     samsung=Phone.Samsung("Galaxy S",47000);
     samsung.print();
 
-    no=10/0
+
+
+    print("-------------------------");
+    #Use Inheritance 
+    child=Phone.Child();
+    child.childMethod();
+    child.setAttr(123);
+    child.getAttr();
+    child.parentMethod();
+    print("-------------------------");
+
+    #for generating exception
+    #no=10/0
+
     #Print Class Variables
     #print("Samsung.__doc__ :"+str(Phone.Samsung.__doc__));
     #print("Samsung.__name__ :"+str(Phone.Samsung.__name__));
@@ -37,9 +50,13 @@ try:
 except Exception as e:
     #implement logger
     logger.error("Exception Found "+str(e));
-    print("Exception Found"+str(e));
+    #print("Exception Found"+str(e));
 finally:
-    
+    #print class id like hashcode
+    #print("ID OF phone5s : "+str(id(phone5s)));
+    #print("ID OF phone6s : "+str(id(phone6s)));
+    #print("ID OF samsung : "+str(id(samsung)));
+
     del(phone5s);
     del(phone6s);
     del(samsung);
