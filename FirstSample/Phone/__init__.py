@@ -1,2 +1,3 @@
-from Iphone import iphone;
-from Samsung import samsung;
+from Iphone import IPhone;
+from Samsung import Samsung;
+from MainPhone import Child;
