@@ -12,6 +12,14 @@ try:
     print("Samsung");
     samsung=Phone.Samsung("Galaxy S",47000);
     samsung.print();
+
+    #using attribute method of python
+    #print(hasattr(samsung,"price"));
+    #setattr(samsung,"price",50000);
+    #print(getattr(samsung,"price"));
+    #delattr(samsung,"price");
+    #print(getattr(samsung,"price"));
+
     print("-------------------------");
 except Exception as e:
     print("Exception Found"+str(e));
